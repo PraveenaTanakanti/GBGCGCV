@@ -33,8 +33,8 @@ class Header extends Component {
                <li><a href="https://twitter.com/gbplacements"><i className='fa fa-twitter'></i></a></li>
                <li><a href="https://www.facebook.com/gitamblrplacements"><i className='fa fa-facebook'></i></a></li>
                <li><a href="https://instagram.com/gbplacements"><i className='fa fa-instagram'></i></a></li>
-               <li><a href="https://www.youtube.com/channel/UCTdcKs5RAOcQ-qm2qOXI2Ng"><i className='fa fa-twitter'></i></a></li>
-               <li><a href="https://www.linkedin.com/in/gitamblrplacements/"><i className='fa fa-youtube'></i></a></li>
+               <li><a href="https://www.youtube.com/channel/UCTdcKs5RAOcQ-qm2qOXI2Ng"><i className='fa fa-youtube'></i></a></li>
+               <li><a href="https://www.linkedin.com/in/gitamblrplacements/"><i className='fa fa-linkedin'></i></a></li>
             </ul>
          </div>
          <Button color="danger">Login</Button>
@@ -44,7 +44,7 @@ class Header extends Component {
       <p className="scrolldown">
          <a className="smoothscroll" href="#about"><i className="icon-down-circle"></i></a>
       </p>
-
+      
    </header>
     );
   }

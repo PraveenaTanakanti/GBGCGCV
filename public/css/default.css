@@ -35,7 +35,7 @@ e. Others
        HTML5 Doctor Reset - html5doctor.com/html-5-reset-stylesheet/
  /* ------------------------------------------------------------------ */
  
- html, body, div, span, object, iframe,
+ /*html, body, div, span, object, iframe,
  h1, h2, h3, h4, h5, h6, p, blockquote, pre,
  abbr, address, cite, code,
  del, dfn, em, img, ins, kbd, q, samp,
@@ -126,7 +126,7 @@ e. Others
  
  /*  1. Basic  ------------------------------------------------------- */
  
- *,
+ /**,
  *:before,
  *:after {
     -moz-box-sizing: border-box;
@@ -147,7 +147,7 @@ e. Others
     line-height: 30px;
     color: #838C95;
  
-    -webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
+    -webkit-font-smoothing: antialiased; /* Fix for webkit rendering 
     -webkit-text-size-adjust: 100%;
  }
  
@@ -155,7 +155,7 @@ e. Others
         Vertical rhythm with leading derived from 6
  --------------------------------------------------------------------- */
  
- h1, h2, h3, h4, h5, h6 {
+/* h1, h2, h3, h4, h5, h6 {
     color: #313131;
     font-family: 'opensans-bold', sans-serif;
     font-weight: normal;
@@ -177,13 +177,13 @@ e. Others
  }
  
  /* for 'em' and 'strong' tags, font-size and line-height should be same with
- the body tag due to rendering problems in some browsers */
+ the body tag due to rendering problems in some browsers 
  em { font: 15px/30px 'opensans-italic', sans-serif; }
  strong, b { font: 15px/30px 'opensans-bold', sans-serif; }
  small { font-size: 11px; line-height: inherit; }
- 
+ */
  /*	Blockquotes */
- blockquote {
+ /*blockquote {
     margin: 30px 0px;
     padding-left: 40px;
     position: relative;
@@ -226,7 +226,7 @@ e. Others
      </aside>
  /*
  /* --------------------------------------------------------------------- */
- .pull-quote {
+ /*.pull-quote {
     position: relative;
     padding: 18px 30px 18px 0px;
  }
@@ -256,7 +256,7 @@ e. Others
  }
  
  /* Abbreviations */
- abbr {
+/* abbr {
     font-family: 'opensans-bold', sans-serif;
     font-variant: small-caps;
     text-transform: lowercase;
@@ -266,24 +266,24 @@ e. Others
  abbr:hover { cursor: help; }
  
  /* drop cap */
- .drop-cap:first-letter {
+/* .drop-cap:first-letter {
     float: left;
     margin: 0;
     padding: 14px 6px 0 0;
     font-size: 84px;
-    font-family: /* Copperplate */ 'opensans-bold', sans-serif;
+    font-family: /* Copperplate */ /*'opensans-bold', sans-serif;
     line-height: 60px;
     text-indent: 0;
     background: transparent;
     color: inherit;
- }
+ }*/
  
- hr { border: solid #E3E3E3; border-width: 1px 0 0; clear: both; margin: 11px 0 30px; height: 0; }
+ /*hr { border: solid #E3E3E3; border-width: 1px 0 0; clear: both; margin: 11px 0 30px; height: 0; }
  
  
  /*  3. Links  ------------------------------------------------------- */
  
- a, a:visited {
+ /*a, a:visited {
     text-decoration: none;
     outline: 0;
     color: #11ABB0;
@@ -299,7 +299,7 @@ e. Others
  
  /*  4. List  --------------------------------------------------------- */
  
- ul, ol { margin-bottom: 24px; margin-top: 12px; }
+ /*ul, ol { margin-bottom: 24px; margin-top: 12px; }
  ul { list-style: none outside; }
  ol { list-style: decimal; }
  ol, ul.square, ul.circle, ul.disc { margin-left: 30px; }
@@ -313,7 +313,7 @@ e. Others
  li { line-height: 18px; margin-bottom: 12px; }
  ul.large li { }
  li p { }
- 
+ */
  /* ---------------------------------------------------------------------
  /*  Stats Tab Markup
      <ul class="stats-tabs">
@@ -322,7 +322,7 @@ e. Others
      Extend this object into your markup.
  /*
  /* --------------------------------------------------------------------- */
- .stats-tabs {
+ /*.stats-tabs {
     padding: 0;
     margin: 24px 0;
  }
@@ -356,12 +356,12 @@ e. Others
  }
  
  /* definition list */
- dl { margin: 12px 0; }
+ /*dl { margin: 12px 0; }
  dt { margin: 0; color:#11ABB0; }
  dd { margin: 0 0 0 20px; }
  
  /* Lining Definition Style Markup */
- .lining dt,
+/* .lining dt,
  .lining dd {
     display: inline;
     margin: 0;
@@ -380,7 +380,7 @@ e. Others
  }
  
  /* Dictionary Definition Style Markup */
- .dictionary-style dt {
+ /*.dictionary-style dt {
     display: inline;
     counter-reset: definitions;
  }
@@ -397,7 +397,7 @@ e. Others
  }
  
  /* Pagination */
- .pagination {
+ /*.pagination {
     margin: 36px auto;
     text-align: center;
  }
@@ -444,7 +444,7 @@ e. Others
  
  /*  5. Images  --------------------------------------------------------- */
  
- img {
+/* img {
     max-width: 100%;
     height: auto;
  }
@@ -453,7 +453,7 @@ e. Others
  
  /*  6. Buttons  --------------------------------------------------------- */
  
- .button,
+ /*.button,
  .button:visited,
  button,
  input[type="submit"],
@@ -483,7 +483,7 @@ e. Others
     border-radius: 3px;
  }
  
- .button:hover,
+ /*.button:hover,
  button:hover,
  input[type="submit"]:hover,
  input[type="reset"]:hover,
@@ -513,7 +513,7 @@ e. Others
  }
  
  /* Fix for odd Mozilla border & padding issues */
- button::-moz-focus-inner,
+ /*button::-moz-focus-inner,
  input::-moz-focus-inner {
      border: 0;
      padding: 0;
@@ -522,7 +522,7 @@ e. Others
  
  /*  7. Forms  --------------------------------------------------------- */
  
- form { margin-bottom: 24px; }
+ /*form { margin-bottom: 24px; }
  fieldset { margin-bottom: 24px; }
  
  input[type="text"],
@@ -549,7 +549,7 @@ e. Others
     width: 220px;
     } */
  
- input[type="text"]:focus,
+/* input[type="text"]:focus,
  input[type="password"]:focus,
  input[type="email"]:focus,
  textarea:focus {
@@ -588,20 +588,20 @@ e. Others
  
  /* default
  --------------------------------------------------------------- */
- .row {
+ /*.row {
     width: 96%;
     max-width: 1020px;
     margin: 0 auto;
  }
  /* fixed width for IE8 */
- .ie .row { width: 1000px ; }
+ /*.ie .row { width: 1000px ; }
  
  .narrow .row { max-width: 980px; }
  
  .row .row { width: auto; max-width: none; margin: 0 -20px; }
  
  /* row clearing */
- .row:before,
+ /*.row:before,
  .row:after {
      content: " ";
      display: table;
@@ -622,7 +622,7 @@ e. Others
  }
  
  /* removed gutters */
- .row.collapsed > .column,
+ /*.row.collapsed > .column,
  .row.collapsed > .columns,
  .column.collapsed, .columns.collapsed  { padding: 0; }
  
@@ -630,7 +630,7 @@ e. Others
  [class*="column"] + [class*="column"].end { float: right; }
  
  /* column widths */
- .row .one         { width: 8.33333%; }
+ /*.row .one         { width: 8.33333%; }
  .row .two         { width: 16.66667%; }
  .row .three       { width: 25%; }
  .row .four        { width: 33.33333%; }
@@ -644,7 +644,7 @@ e. Others
  .row .twelve      { width: 100%; }
  
  /* Offsets */
- .row .offset-1    { margin-left: 8.33333%; }
+ /*.row .offset-1    { margin-left: 8.33333%; }
  .row .offset-2    { margin-left: 16.66667%; }
  .row .offset-3    { margin-left: 25%; }
  .row .offset-4    { margin-left: 33.33333%; }
@@ -657,7 +657,7 @@ e. Others
  .row .offset-11   { margin-left: 91.66667%; }
  
  /* Push/Pull */
- .row .push-1      { left: 8.33333%; }
+ /*.row .push-1      { left: 8.33333%; }
  .row .pull-1      { right: 8.33333%; }
  .row .push-2      { left: 16.66667%; 	}
  .row .pull-2      { right: 16.66667%; }
@@ -682,7 +682,7 @@ e. Others
  
  /* block grids
  --------------------------------------------------------------------- */
- .bgrid-sixths [class*="column"]   { width: 16.66667%; }
+ /*.bgrid-sixths [class*="column"]   { width: 16.66667%; }
  .bgrid-quarters [class*="column"] { width: 25%; }
  .bgrid-thirds [class*="column"]   { width: 33.33333%; }
  .bgrid-halves [class*="column"]   { width: 50%; }
@@ -693,28 +693,28 @@ e. Others
  different screen sizes. Allows columns with different heights to align
  properly.
  --------------------------------------------------------------------- */
- .first { clear: left; }   /* first column in default screen */
- .s-first { clear: none; } /* first column in smaller screens */
+ /*.first { clear: left; }   /* first column in default screen */
+/* .s-first { clear: none; } /* first column in smaller screens */
  
  /* smaller screens
  --------------------------------------------------------------- */
- @media only screen and (max-width: 900px) {
+ /*@media only screen and (max-width: 900px) {
  
     /* block grids on small screens */
-    .s-bgrid-sixths [class*="column"]   { width: 16.66667%; }
+    /*.s-bgrid-sixths [class*="column"]   { width: 16.66667%; }
     .s-bgrid-quarters [class*="column"] { width: 25%; }
     .s-bgrid-thirds [class*="column"]   { width: 33.33333%; }
     .s-bgrid-halves [class*="column"]   { width: 50%; }
  
     /* block grids left clearing */
-    .first { clear: none; }
+    /*.first { clear: none; }
     .s-first { clear: left; }
  
  }
  
  /* mobile wide/smaller tablets
  --------------------------------------------------------------- */
- @media only screen and (max-width: 767px) {
+/* @media only screen and (max-width: 767px) {
  
     .row {
        width: 460px;
@@ -734,7 +734,7 @@ e. Others
     [class*="bgrid"] [class*="column"] + [class*="column"]:last-child { float: none; }
  
     /* Offsets */
-    .row .offset-1    { margin-left: 0%; }
+    /*.row .offset-1    { margin-left: 0%; }
     .row .offset-2    { margin-left: 0%; }
     .row .offset-3    { margin-left: 0%; }
     .row .offset-4    { margin-left: 0%; }
@@ -749,7 +749,7 @@ e. Others
  
  /* mobile narrow
  --------------------------------------------------------------- */
- @media only screen and (max-width: 460px) {
+/* @media only screen and (max-width: 460px) {
  
     .row { width: auto; }
  
@@ -757,7 +757,7 @@ e. Others
  
  /* larger screens
  --------------------------------------------------------------- */
- @media screen and (min-width: 1200px) {
+/* @media screen and (min-width: 1200px) {
  
     .wide .row { max-width: 1180px; }
  
@@ -771,7 +771,7 @@ e. Others
      (http://nicolasgallagher.com/micro-clearfix-hack/
  --------------------------------------------------------------------- */
  
- .cf:before,
+ /*.cf:before,
  .cf:after {
      content: " ";
      display: table;
@@ -782,7 +782,7 @@ e. Others
  
  /*  2. Misc -------------------------------------------------------- */
  
- .remove-bottom { margin-bottom: 0 !important; }
+ /*.remove-bottom { margin-bottom: 0 !important; }
  .half-bottom { margin-bottom: 12px !important; }
  .add-bottom { margin-bottom: 24px !important; }
  .no-border { border: none; }
@@ -796,7 +796,7 @@ e. Others
     margin-left: auto !important;
     margin-right: auto !important;
     text-align: center !important;
- }
+ }*/
  
  
  
