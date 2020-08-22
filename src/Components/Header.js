@@ -15,7 +15,7 @@ class Header extends Component {
       <nav id="nav-wrap">
          <a className="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
 	      <a className="mobile-btn" href="#home" title="Hide navigation">Hide navigation</a>
-         <ul id="nav" className="nav">
+         <ul id="nav" className="nav" style={{justifyContent:"center"}}>
             <li className="current"><a className="smoothscroll" href="#home">Home</a></li>
             <li><a className="smoothscroll" href="#about">About</a></li>
 	         <li><a className="smoothscroll" href="#event">Events</a></li>
@@ -37,7 +37,7 @@ class Header extends Component {
                <li><a href="https://www.linkedin.com/in/gitamblrplacements/"><i className='fa fa-linkedin'></i></a></li>
             </ul>
          </div>
-         <Button color="danger">Login</Button>
+         <button className="button">Login</button>
 
       </div>
 

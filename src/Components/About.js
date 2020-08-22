@@ -17,16 +17,18 @@ class About extends Component {
     }
 
     return (
-      <section id="about">
+    <section id="about">
+      <div className='container'>
       <div className="row">
-         <div className="three columns">
+         <div className="col-sm-4 "  >
             <img className="profile-pic"  src={profilepic} alt="Tim Baker Profile Pic" />
          </div>
-         <div className="nine columns main-col">
-            <h2>About GCGC</h2>
+         <div className="col-sm ">
+          <h2>About GCGC</h2><br />
             <p>{bio}</p>
-         </div>
-      </div>
+          </div>
+        </div>
+       </div> 
    </section>
     );
   }

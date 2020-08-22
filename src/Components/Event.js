@@ -7,11 +7,13 @@ const AutoplaySlider = withAutoplay(AwesomeSlider);
 class Event extends Component {
   render() {
     return (
-          <div className='container' id='event'>
+          <section  id='event'>
+            <div className='container'>
               <div className='row'>
-                <div className='six columns'>
+                <div className='col-sm-6' >
                           <div><h3 style={{color: 'rgb(36, 30, 30)'}}>Gallery</h3></div>
-                          <AutoplaySlider
+                          <AutoplaySlider 
+                          //style={{height:"400px",width:"400px"} }
                                 play={true}
                                 cancelOnInteraction={true} // should stop playing on user interaction
                                 interval={5000}
@@ -24,10 +26,12 @@ class Event extends Component {
                         <div data-src={require('../images/3.jpg')} />
                         </AutoplaySlider>
                 </div>  
-                <div className='six columns'>
+                <div className='col-sm' >
                 <div><h3 style={{color: 'rgb(36, 30, 30)'}}>Events</h3></div>
 
                 <AutoplaySlider
+                //style={{height:"400px",width:"400px" }}
+                
                           play={true}
                           cancelOnInteraction={true} // should stop playing on user interaction
                           interval={4000}
@@ -44,7 +48,8 @@ class Event extends Component {
                 </div>
               </div>
           &nbsp;
-    </div>
+          </div>
+    </section>
     );
   }
 }
